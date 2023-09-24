@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Greeting Page</title>
+<title>Greeting Page</title>
 </head>
 <body>
-    <h1>Greeting Page</h1>
-    <script>
-        var userName = prompt("Please enter your name:");
-
-        if (userName !== null && userName !== "") {
-            var greeting = "Hello, " + userName + "!";
-            var greetingParagraph = document.createElement("p");
-            greetingParagraph.textContent = greeting;
-            document.body.appendChild(greetingParagraph);
-        } else {
-            alert("Hello, guest!");
-        }
-    </script>
+<script>
+const userName = prompt ("Please enter your name:");
+if (userName) {
+const greeting = `Hello, ${userName}! `; document.write(greeting);
+} else {
+document.write("Hello, Anonymous!");
+}
+</script>
 </body>
 </html>
